@@ -633,27 +633,108 @@
 
 //   1/14/21 Turn in
 
-class User {
-    constructor() {
-        this.userName = "";
-        this.passWord = "";
-    }
+//class User {
+    //set userName(username) {
+        //if(username.lenght > 4){
+            //this.username = username;
+        //}else{
+            //console.log(`Your UserName Needs to be longer then 4 charecters`);
+        //}
+    //}
 
-    set userName(name) {
-        if(this.userName.lenght > 4){
-            continue;
-        }
-    }
+    //set passWord(password) {
+        //let hasNum = false;
+        //for(let i = 0; i < password.lenght; i++){
+            //if(isNaN(password[i]) == false){
+                //hasNum = true;
+            //}
+        //}
+        //if(password.lenght > 5 && hasNum == true){
+            //this.password = password;
+        //}else{
+            //console.log(`You password must be atleast 5 charecters and have a number`);
+        //}
+    //}
 
-    set passWord(word) {
-        if(this.passWord.lenght > 5 && this.passWord.includes("1", "2", "3", "4", "5", "6", "7", "8", "9")){
-            continue;
-        }
-    }
+    //get userName(){
+        //return this.username;
+    //}
+    //get passWord(){
+        //return this.password;
+    //}
+    //login(username, password){
+        //if(username == this.username && password == this.password){
+            //console.log(`Your Login in ${this.username}` );
+        //}else{
+            //console.log(`Your User name or Password is not found`);
+        //}
+    //}
+//}
 
 
-}
+//let user = new User();
+//user.userName = "sageMode";
 
-let user = new User();
-user.userName = "Johnny";
-user.passWord = "spoderman1";
+//===============================================================================================================================//
+
+//Extening Classes
+
+//class Animal {   //Animal is the parent class
+    //constructor(speed){
+        //this.speed = speed;
+    //}
+    //run() {
+        //distance += this.speed;
+    //}
+
+//}
+
+//class Cat extends Animal {   //Cat is the child class
+    //lives(live){
+        //this.live = live;
+    //}
+//}
+
+//============================================================================================//
+
+//Seuper Method
+
+//class Animal {
+    //constructor(){
+        //this.speed = 0;
+        //this.name = name;
+    //}
+    //run(speed){
+        //this.speed = speed;
+        //console.log(`${this.name} runs with speed ${this.speed}`);
+    //}
+    //stop(){
+        //this.speed = 0;
+        //console.log(`${this.name} stand still`);
+    //}
+//}
+
+//class Rabbit extends Animal{
+    //hide(){
+        //console.log(`${this.name} has sneek 100`);
+    //}
+    //stop(){
+        //This overrides the parent method
+    //}
+    //stop(){
+        //super.stop();
+        //this.hide();
+    //}
+    //adding to the consturctor
+    //constuctor(name, hops){
+        //super(name);
+        //this.hopes = hop;
+    //}
+//}
+
+//let rabbit = new Rabbit("Peter");
+//rabbit.run(12);
+//rabbit.stop();
+
+//===============================================================================================//
+
